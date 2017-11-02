@@ -24,7 +24,7 @@ RUN unzip sdk-tools.zip -d android
 RUN sdkmanager --update
 RUN yes | sdkmanager "build-tools;26.0.2"
 RUN yes | sdkmanager "platforms;android-26"
-RUN yes | sdkmanager "tools;26.1.1"
+RUN sdkmanager "tools;26.1.1"
 
 RUN curl -o gradle-2.14-bin.zip https://downloads.gradle.org/distributions/gradle-2.14-bin.zip
 RUN unzip gradle-2.14-bin.zip -d gradle
